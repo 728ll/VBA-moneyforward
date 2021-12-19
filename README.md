@@ -9,10 +9,7 @@ Sub chrome()
   Driver.Get ("https://moneyforward.com/")　'指定したアドレスに飛ぶ
 
 
-  Cells(1, 1) = Driver.FindElementByCss("#registered-accounts > ul > li:nth-child(11) > ul.amount").Text '指定のセルに書き込む
-  Cells(2, 1) = Driver.FindElementByCss("#registered-accounts > ul > li:nth-child(12) > ul.amount").Text
-  Cells(3, 1) = Driver.FindElementByCss("#registered-accounts > ul > li:nth-child(13) > ul.amount").Text
-  Cells(4, 1) = Driver.FindElementByCss("#registered-accounts > ul > li:nth-child(14) > ul.amount").Text
+  Cells(x, y) = Driver.FindElementByCss("USER_CLASS").Text '指定のセルに書き込む
 
   Driver.Close '閉じる
 
